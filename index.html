@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timeline App</title>
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <svg
+        id="logo"
+        width="80px"
+        height="80px"
+        viewBox="0 0 78 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" fill="#000"></path>
+        <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" fill="#000"></path>
+        <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" fill="#000"></path>
+      </svg>
+      <!-- Theme Toggle -->
+      <label>
+        <input type="checkbox" id="theme-toggle" />ThemeToggle
+      </label>
+    </header>
+    <nav>
+      <!-- container for filters/placeholders (empty for now). -->
+    </nav>
+    <section id="timeline">
+      <!-- for event markers example below-->
+      <div class="marker" data-year="1946">1946</div>
+      <div class="marker" data-year="1971">1971</div>
+      <div class="marker" data-year="1981">1981</div>
+      <div class="marker" data-year="1991">1991</div>
+      <div class="marker" data-year="2007">2007</div>
+      <div class="marker" data-year="2020">2020</div>
+    </section>
+    <div id="modal">
+      <!-- for future pop-ups -->
+    </div>
+    <main>
+      <article>
+        <h3>The Invention of the First Computer</h3>
+        <time datetime="1946-02-14">February 14, 1946</time>
+        <p>
+          ENIAC, considered the first general-purpose electronic computer, was
+          unveiled at the University of Pennsylvania. It could perform complex
+          calculations faster than any previous machine.
+        </p>
+        <figure>
+          <img
+            src="https://www.slashgear.com/img/gallery/who-built-the-first-computer/intro-1650585521.jpg"
+            alt="ENIAC Computer"
+          />
+          <figcaption>
+            ENIAC - The first electronic general-purpose computer.
+          </figcaption>
+        </figure>
+      </article>
+    </main>
+  </body>
+</html>
