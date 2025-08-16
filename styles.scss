@@ -84,7 +84,6 @@ header {
 }
 
 #timeline {
-
   margin: 5px;
   position: relative;
 
@@ -138,9 +137,9 @@ li {
 
     transform: translate(-50%, 100%);
     @media (min-width: $mobile) {
-      width: 0.5rem;
-      height: 0.5rem;
-      border: 0.5rem solid var(--text-color);
+      width: 0.35rem;
+      height: 0.35rem;
+      border: 0.35rem solid var(--text-color);
       top: 65%;
     }
     @media (min-width: $tablet) {
@@ -176,19 +175,27 @@ li {
     padding: 20px;
     border-radius: 15px;
     background-color: var(--bg-color);
-    @media (min-width: $tablet) {
-      margin: 1rem 5rem;
+    @media (min-width: $mobile) {
+      margin: 2rem 5rem;
     }
     button {
       position: absolute;
       background-color: red;
       color: white;
-      font-size: 1.5rem;
+      font-size: 1rem;
       right: 0;
       top: 0;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 5px;;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 5px;
+      @media (min-width: $mobile) {
+        font-size: 1.5rem;
+        right: 0;
+        top: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 5px;
+      }
     }
   }
   figure {
@@ -205,4 +212,3 @@ li {
     }
   }
 }
-
