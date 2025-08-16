@@ -30,9 +30,6 @@
         <input type="checkbox" />
         <span class="slider"></span>
 
-      <label>
-        <input type="checkbox" id="theme-toggle" />ThemeToggle
-
       </label>
     </header>
     <nav>
@@ -40,95 +37,38 @@
     </nav>
     <section id="timeline">
 
-       <!-- Added content as attribute that can be accessed with javascript later -->
- 
+      <!-- Added content as attribute that can be accessed with javascript later -->
+
       <ul>
-        <li
-          class="marker"
-          data-year="1946"
-          data-title="The Invention of the First Computer"
-          data-data="ENIAC, considered the first general-purpose electronic computer, was
-          unveiled at the University of Pennsylvania. It could perform complex
-          calculations faster than any previous machine."
-          data-image="https://www.slashgear.com/img/gallery/who-built-the-first-computer/intro-1650585521.jpg"
-          data-time="February 14, 1946"
-          data-caption="ENIAC - The first electronic general-purpose computer."
-        >
-          1946
-        </li>
-        <li
-          class="marker"
-          data-year="1971"
-          data-title="The First Microprocessor"
-          data-date="1971-11-15"
-          data-description="Intel releases the first microprocessor, the Intel 4004, revolutionizing computing."
-          data-image="https://4.bp.blogspot.com/-78C6qbeW6_U/UymwQQrs5EI/AAAAAAAABxI/EZz7HBkmRFc/s1600/Intel+4004,+o+primeiro+micro-processador+do+mundo,+lan%C3%A7ado+em+15+de+novembro+de+1971..jpg"
-          data-caption="Intel 4004 - the first commercially available microprocessor."
-        >
-          1971
-        </li>
-        <li
-          class="marker"
-          data-year="1981"
-          data-title="The IBM Personal Computer"
-          data-date="1981-08-12"
-          data-description="IBM introduces its first Personal Computer (IBM PC), setting standards for PC hardware and operating systems for decades."
-          data-image="https://www.profesionalreview.com/wp-content/uploads/2023/12/ibm-pc-1.jpg"
-          data-caption="IBM PC 5150 - the computer that popularized the PC industry."
-        >
-          1981
-        </li>
-        <li
-          class="marker"
-          data-year="1991"
-          data-title="The Birth of the World Wide Web"
-          data-date="1991-08-06"
-          data-description="Tim Berners-Lee publicly releases the World Wide Web, changing how information is accessed and shared globally."
-          data-image="https://informationq.com/wp-content/uploads/2017/11/InterNet-and-World-Wide-Web.jpg"
-          data-caption="The first web browser - WorldWideWeb, created by Tim Berners-Lee."
-        >
-          1991
-        </li>
-        <li
-          class="marker"
-          data-year="2007"
-          data-title="The Smartphone Revolution"
-          data-date="2007-01-09"
-          data-description="Apple unveils the first iPhone, combining a phone, iPod, and internet communicator, transforming mobile technology forever."
-          data-image="https://th.bing.com/th/id/OIP.iWBoxuHe2-AYNiULXLXAmgHaE8?w=216&h=180&c=7&r=0&o=7&dpr=1.2&pid=1.7&rm=3"
-          data-caption="The original iPhone - the start of the smartphone era."
-        >
-          2007
-        </li>
-        <li
-          class="marker"
-          data-year="2020"
-          data-title="Advances in Artificial Intelligence"
-          data-date="2020-05-28"
-          data-description="AI models like GPT-3 showcase unprecedented natural language processing capabilities, pushing the boundaries of machine learning."
-          data-image="https://tse1.mm.bing.net/th/id/OIP.5y2SgHCeVNM_ZGuFpZsdBgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-          data-caption="Artificial Intelligence - reshaping industries and human-computer interaction."
-        >
-          2020
-        </li>
+        <li class="marker" data-year="1946">1946</li>
+        <li class="marker" data-year="1971">1971</li>
+        <li class="marker" data-year="1981">1981</li>
+        <li class="marker" data-year="1991">1991</li>
+        <li class="marker" data-year="1998">1998</li>
+        <li class="marker" data-year="2007">2007</li>
+        <li class="marker" data-year="2012">2012</li>
+        <li class="marker" data-year="2020">2020</li>
+
       </ul>
     </section>
     <!-- Pop Up -->
     <div id="modal">
       <main>
         <article>
-          <h2 class="modal-title"></h2>
-          <time id="modal-time"></time>
-          <p id="modal-data"></p>
+
+          <button id="modal-close">X</button>
+          <h3 class="modal-title"></h3>
+          <time id="modal-date"></time>
+          <p id="modal-category"></p>
+          <p id="modal-description"></p>
           <figure>
-            <img id="modal-image" alt="" />
+            <img id="modal-image" alt="" width="300" height="300" />
             <figcaption id="modal-caption"></figcaption>
           </figure>
         </article>
       </main>
     </div>
-
-
-
+    <script src="script.js"></script>
   </body>
 </html>
+

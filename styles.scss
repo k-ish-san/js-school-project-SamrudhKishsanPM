@@ -12,7 +12,6 @@ $mobile: 768px;
 $tablet: 1023px;
 $desktop: 1024px;
 
-
 // default mobile <768px
 // tablet <1024px
 // desktop >=1024px
@@ -27,8 +26,8 @@ $desktop: 1024px;
   --text-color: var(--light-text);
 }
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Arial, sans-serif";
@@ -85,112 +84,125 @@ header {
 }
 
 #timeline {
-    margin: 5px;
-    position: relative;
-      
-    @media (min-width: $tablet) {
-      margin: 10px 60px;
-    }
-    @media (min-width: $desktop) {
-      margin: 20px 100px;
-    }
-    
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        list-style-type: none;
-        color: var(--text-color);
-        
-    }
+
+  margin: 5px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 10px 60px;
+  }
+  @media (min-width: $desktop) {
+    margin: 20px 100px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    color: var(--text-color);
+  }
 }
 
-  li{
-    background-color: var(--secondary-color);
-    padding: 10px;
-    border-radius: 15px 0;
-    list-style-type: none;
+li {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 15px 0;
+  list-style-type: none;
+  cursor: pointer;
+  @media (min-width: $mobile) {
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 20px 0;
+  }
+  @media (min-width: $tablet) {
+    font-size: 2rem;
+    padding: 25px;
+    border-radius: 25px 0;
+  }
+}
+
+.marker {
+  position: relative;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    border: 0.25rem solid var(--text-color);
+    border-radius: 50%;
+    top: 60%;
+    left: -2.5%;
+
+    transform: translate(-50%, 100%);
     @media (min-width: $mobile) {
-      font-size: 1.5rem;
-      padding: 15px;
-      border-radius: 20px 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      border: 0.5rem solid var(--text-color);
+      top: 65%;
     }
     @media (min-width: $tablet) {
+      top: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      border: 0.5rem solid var(--text-color);
+      top: 70%;
+    }
+  }
+}
+
+// Modal
+#modal {
+  display: none;
+  @media (min-width: $mobile) {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    @media (min-width: $tablet) {
       font-size: 2rem;
-      padding: 25px;
-      border-radius: 25px 0;
     }
   }
-
-  .marker {
+  time {
+    font-style: italic;
+  }
+  main {
+    display: flex;
     position: relative;
-    font-weight: bold;
-   
-
-    &::before {
-        content: "";
-        position: absolute;
-        width: 0.25rem;
-        height: 0.25rem;
-        border: 0.25rem solid var(--text-color);
-        border-radius: 50%;
-        top: 60%;
-        left: -2.5%;
-       
-        transform: translate(-50%, 100%);
-        @media (min-width: $mobile) {
-            width: 0.5rem;
-            height: 0.5rem;
-            border: 0.5rem solid var(--text-color);
-            top: 65%;
-        }
-        @media (min-width: $tablet) {
-            top: 50%;
-            width: 0.5rem;
-            height: 0.5rem;
-            border: 0.5rem solid var(--text-color);
-            top: 70%;
-        }
+    flex-direction: row;
+    margin: 10px 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--bg-color);
+    @media (min-width: $tablet) {
+      margin: 1rem 5rem;
+    }
+    button {
+      position: absolute;
+      background-color: red;
+      color: white;
+      font-size: 1.5rem;
+      right: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 5px;;
     }
   }
-
-  // Modal
-  #modal {
-    visibility: hidden;
+  figure {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    max-width: 300px;
+    margin: 20px 0;
     @media (min-width: $mobile) {
-        font-size: 1.5rem;
+      max-width: 450px;
     }
-    h2 {
-        font-size: 1.5rem;
-        @media (min-width: $tablet) {
-            font-size: 2rem;
-        }
-    }
-    time {
-        font-style: italic;
-    }
-    main { 
-        display: flex;
-        flex-direction: row;
-        margin: 10px 20px;
-        padding: 20px;
-        border-radius: 15px;
-        background-color: var(--bg-color);
-        @media (min-width: $tablet){
-            margin: 1rem 5rem; 
-        }
-       
-    }
-    figure {
-         display: flex;
-         flex-direction: column;
-         max-width: 300px;
-         margin: 20px 0;
-         @media (min-width: $mobile){
-            max-width: 450px;
-         }
-        @media (min-width: $tablet) {
-            max-width: 600px;
-        }
+    @media (min-width: $tablet) {
+      max-width: 600px;
     }
   }
+}
+
