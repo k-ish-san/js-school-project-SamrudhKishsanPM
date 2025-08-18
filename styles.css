@@ -129,9 +129,9 @@ li {
 }
 @media (min-width: 768px) {
   .marker::before {
-    width: 0.5rem;
-    height: 0.5rem;
-    border: 0.5rem solid var(--text-color);
+    width: 0.35rem;
+    height: 0.35rem;
+    border: 0.35rem solid var(--text-color);
     top: 65%;
   }
 }
@@ -173,21 +173,31 @@ li {
   border-radius: 15px;
   background-color: var(--bg-color);
 }
-@media (min-width: 1023px) {
+@media (min-width: 768px) {
   #modal main {
-    margin: 1rem 5rem;
+    margin: 2rem 5rem;
   }
 }
 #modal main button {
   position: absolute;
   background-color: red;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   right: 0;
   top: 0;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  #modal main button {
+    font-size: 1.5rem;
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+  }
 }
 #modal figure {
   display: flex;

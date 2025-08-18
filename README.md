@@ -34,7 +34,7 @@ This stage focuses on styling the html skeleton using css using external stylesh
 # Timeline App (Stage 3)
 
 
-## ✅ Stage 1: Adding interactivity with Javascript
+## ✅ Stage 3: Adding interactivity with Javascript
 This stage focuses on building the **interactivity** for the timeline app, ensuring events are displayed when you click the markers.
 
 ### **Included in this stage:**
@@ -51,4 +51,16 @@ This stage focuses on building the **interactivity** for the timeline app, ensur
   - A **paragraph** describing the event.
   - A **figure** with an image and caption.
   - A **category** with mention of category which is "timeline of computing".
+
+## ✅ Stage 4: Adding Static typing and modules using typescript.
+This stage focuses on building the **type safety and reliablility of code** for the timeline app, ensuring only certain types are used to avoid errors during run time.
+
+### **Included in this stage:**
+- **data/events.json** containing the event information in json format.(same as before)
+- **src folder containing index.ts and other .ts modules**.
+- **src/interfaces/types containing the types of the event data.**
+- **Created modules for fetching, rendering, modal display/close of events.** 
+- **Created a tsconfig.json file with root src folder(for only .ts files) with compiler options default js ES6 and enabled strict.**.
+- **Added dist folder containing the js files that are build using `npm run build` command.**
+- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness(:) .
 
