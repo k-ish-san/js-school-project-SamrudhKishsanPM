@@ -1,0 +1,27 @@
+$primary-color: rgb(41, 152, 0);
+$secondary-color: #a2f1d9;
+
+$font-size-base: 16px;
+
+$light-bg: #ecfffb;
+$light-text: #000000;
+
+$dark-bg: #000000;
+$dark-text: #efffe8;
+
+$mobile: 768px;
+$tablet: 1023px;
+$desktop: 1024px;
+
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --font-size-base: #{$font-size-base};
+  
+  --light-bg: #{$light-bg};
+  --light-text: #{$light-text};
+
+  --dark-bg: #{$dark-bg};
+  --dark-text: #{$dark-text};
+
+}

@@ -1,0 +1,22 @@
+@import "./variables";
+
+#timeline {
+  margin: 1rem;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0.75rem 4rem;
+  }
+  @media (min-width: $desktop) {
+    margin: 1rem 5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    color: var(--text-color);
+  }
+}
+
