@@ -1,0 +1,66 @@
+@import "./variables";
+
+li {
+  background-color: var(--primary-color);
+  padding: 0.35rem ;
+  border-radius: 1rem 0;
+  list-style-type: none;
+  cursor: pointer;
+  @media (min-width: $mobile) {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem 0;
+  }
+  @media (min-width: $tablet) {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 2rem 0;
+  }
+}
+
+.marker {
+  position: relative;
+  font-weight: bold;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    border: 0.25rem solid var(--secondary-color);
+    border-radius: 50%;
+    top: 60%;
+    left: -2.5%;
+
+    transform: translate(-50%, 100%);
+    @media (min-width: $mobile) {
+      width: 0.35rem;
+      height: 0.35rem;
+      border: 0.35rem solid var(--secondary-color);
+      top: 65%;
+    }
+    @media (min-width: $tablet) {
+      top: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      border: 0.5rem solid var(--secondary-color);
+      top: 70%;
+    }
+  }
+}
+
+button {
+  background-color: var(--secondary-color);
+  border-radius: 0.25rem;
+  padding: 0.1rem;
+  border: 0.1rem solid var(--primary-color);
+  cursor: pointer;
+   @media (min-width: $mobile) {
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+   }
+}
+
+button:hover {
+  background-color: rgb(168, 255, 38);
+}
