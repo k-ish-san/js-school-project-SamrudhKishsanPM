@@ -58,8 +58,8 @@ This stage focuses on building the **type safety and reliablility of code** for 
 - **Created modules for fetching, rendering, modal display/close of events.** 
 - **Created a tsconfig.json file with root src folder(for only .ts files) with compiler options default js ES6 and enabled strict.**.
 - **Added dist folder containing the js files that are build using `npm run build` command.**
-- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness**.
-- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness**.
+- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness** .
+
 
 ## ✅ Stage 5: Building the dynamic user interfacing using react + ts.
 This stage focuses on building the **UI of the app using react(JSX) and typescript with vite build setup** using features like component architecture, custom hooks, Virtual DOM.
@@ -71,5 +71,4 @@ This stage focuses on building the **UI of the app using react(JSX) and typescri
 - **styles folder contains all the styles for the corresponding components including variables and globalscss file for main(using SASS)** .
 - **custom hooks like useTheme for theme toggle, useTimeline for handling events, and useModal for opening and closing modal(the events)**.
 - **Used Vite + react + typescript setup.**
-
 
