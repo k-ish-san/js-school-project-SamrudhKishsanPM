@@ -1,6 +1,4 @@
-
 # Timeline App
-
 
 ## ✅ Stage 1: Static Skeleton (HTML Only)
 This stage focuses on building the **semantic HTML structure** for the timeline app, ensuring accessibility and a clear layout.
@@ -30,7 +28,6 @@ This stage focuses on styling the html skeleton using css using external stylesh
 - **Created circular markers with dates above them for reference to the timeline**.
 - **Completed the content for the modal pop-up window**.
 - **Changed the modal visibility to hidden by default**.
-
 
 
 ## ✅ Stage 3: Adding interactivity with Javascript
@@ -64,15 +61,14 @@ This stage focuses on building the **type safety and reliablility of code** for 
 - **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness** .
 
 
-
 ## ✅ Stage 5: Building the dynamic user interfacing using react + ts.
 This stage focuses on building the **UI of the app using react(JSX) and typescript with vite build setup** using features like component architecture, custom hooks, Virtual DOM.
 
 ### **Included in this stage:**
-- **`data/events.json` containing the event information in json format.(same as before)**
+- **`data/events.json` containing the event information in json format(same as before)**.
 - **src folder containing assets, components, data, hooks, styles(SASS)**.
-- **components folder contains all the components (.tsx)**
-- **styles folder contains all the styles for the corresponding components including variables and globalscss file for main(using SASS)** 
+- **components folder contains all the components (.tsx)**.
+- **styles folder contains all the styles for the corresponding components including variables and globalscss file for main(using SASS)** .
 - **custom hooks like useTheme for theme toggle, useTimeline for handling events, and useModal for opening and closing modal(the events)**.
 - **Used Vite + react + typescript setup.**
 
