@@ -4,12 +4,6 @@
   @media (min-width: $mobile) {
     font-size: 1.5rem;
   }
-  h2 {
-    font-size: 1.5rem;
-    @media (min-width: $tablet) {
-      font-size: 2rem;
-    }
-  }
   time {
     font-style: italic;
   }
@@ -17,43 +11,57 @@
     display: flex;
     position: relative;
     flex-direction: row;
-    margin: 10px 20px;
-    padding: 20px;
-    border-radius: 15px;
+    margin: 0.25rem 0.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+    border: 0.2rem solid var(--secondary-color);
+    border-radius: 1rem 0;
     background-color: var(--primary-color);
     @media (min-width: $mobile) {
-      margin: 2rem 5rem;
+      margin: 1.5rem 3rem;
+      padding: 2.5rem;
+      font-size: 1.5rem;
+    }
+     @media (min-width: $tablet) {
+      margin: 2.5rem 5rem;
+      padding: 5rem;
+      font-size: 2rem;
     }
     button {
       position: absolute;
-      background-color: red;
+      background-color: #ad1414;
       color: white;
       font-size: 0.75rem;
       right: 0;
       top: 0;
       width: 1.5rem;
       height: 1.5rem;
-      border-radius: 0.25rem;
+      border-radius: 0.25rem 0;
       @media (min-width: $mobile) {
         font-size: 1.5rem;
         right: 0;
         top: 0;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 0.5rem;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.5rem 0;
       }
     }
   }
   figure {
     display: flex;
     flex-direction: column;
-   
-    margin: 20px 0;
-    @media (min-width: $mobile) {
-      max-width: 450px;
-    }
-    @media (min-width: $tablet) {
-      max-width: 600px;
+    margin: 1.5rem 0;
+    img {
+      max-width: 300px;
+      border-radius: 1rem;
+
+      @media (min-width: $mobile) {
+        max-width: 400px;
+
+      }
+      @media (min-width: $tablet) {
+        max-width: 500px;
+      }
     }
   }
 }
