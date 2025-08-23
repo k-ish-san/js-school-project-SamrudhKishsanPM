@@ -58,8 +58,8 @@ This stage focuses on building the **type safety and reliablility of code** for 
 - **Created modules for fetching, rendering, modal display/close of events.** 
 - **Created a tsconfig.json file with root src folder(for only .ts files) with compiler options default js ES6 and enabled strict.**.
 - **Added dist folder containing the js files that are build using `npm run build` command.**
-- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness**.
-- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness**.
+- **Modified the src in index.html to dist/index.js and also corrected some typos and responsiveness** .
+
 
 ## ✅ Stage 5: Building the dynamic user interfacing using react + ts.
 This stage focuses on building the **UI of the app using react(JSX) and typescript with vite build setup** using features like component architecture, custom hooks, Virtual DOM.
@@ -72,6 +72,7 @@ This stage focuses on building the **UI of the app using react(JSX) and typescri
 - **custom hooks like useTheme for theme toggle, useTimeline for handling events, and useModal for opening and closing modal(the events)**.
 - **Used Vite + react + typescript setup.**
 
+
 ## ✅ Stage 6: Web Accessibility - Designing for everyone.
 This stage focuses on building the **Web Accessibility** using tools like WCAG contrast checker, lighthouse for checking and aria for improving it.
 
@@ -82,4 +83,5 @@ This stage focuses on building the **Web Accessibility** using tools like WCAG c
 - **Used aria labels where semantic html is not used to denote important information to users.** .
 - **Improved SEO by adding meta data and tested it using lighthouse. Used rem for scaling the size in the styles files.**.
 - **Ensured that both WCAG AA and AAA contrast ratio are met using WCAG contrast checker tool.**
+
 
