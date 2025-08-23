@@ -72,4 +72,14 @@ This stage focuses on building the **UI of the app using react(JSX) and typescri
 - **custom hooks like useTheme for theme toggle, useTimeline for handling events, and useModal for opening and closing modal(the events)**.
 - **Used Vite + react + typescript setup.**
 
+## ✅ Stage 6: Web Accessibility - Designing for everyone.
+This stage focuses on building the **Web Accessibility** using tools like WCAG contrast checker, lighthouse for checking and aria for improving it.
+
+### **Included in this stage:**
+- **Added new hooks for navigation along interactive elements using tab, arrowkeys, Esc key and Enter**.
+- **src/assets/images containing all the images used in the events.**.
+- **components folder contains all the components (.tsx)**.
+- **Used aria labels where semantic html is not used to denote important information to users.** .
+- **Improved SEO by adding meta data and tested it using lighthouse. Used rem for scaling the size in the styles files.**.
+- **Ensured that both WCAG AA and AAA contrast ratio are met using WCAG contrast checker tool.**
 

@@ -2,17 +2,19 @@
 
 li {
   background-color: var(--primary-color);
-  padding: 0.35rem ;
-  border-radius: 1rem 0;
+  padding: 0.15rem ;
+  border-radius: 0.5rem 0;
+  font-size: 1rem;;
   list-style-type: none;
+  border: 0.2rem outset var(--secondary-color);
   cursor: pointer;
   @media (min-width: $mobile) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem;
     border-radius: 1.5rem 0;
   }
   @media (min-width: $tablet) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
     border-radius: 2rem 0;
   }
@@ -53,6 +55,7 @@ button {
   background-color: var(--secondary-color);
   border-radius: 0.25rem;
   padding: 0.1rem;
+  font-weight: 500;
   border: 0.1rem solid var(--primary-color);
   cursor: pointer;
    @media (min-width: $mobile) {
@@ -62,5 +65,9 @@ button {
 }
 
 button:hover {
-  background-color: rgb(168, 255, 38);
+  background-color: rgb(11, 255, 3);
+}
+
+.active {
+   background-color: rgb(246, 255, 0);
 }
